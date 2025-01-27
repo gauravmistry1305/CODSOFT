@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 10px 0;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .brand {
+    font-family: 'Georgia', serif;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    text-align: right;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #00f829fc;
+}
+
+
+.hero {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom right, #283c86, #45a247);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transition: transform 0.5s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.destinations-list,
+.packages-list,
+.testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destination-item,
+.package-item,
+.testimonial-item {
+    flex: 1;
+    margin: 10px;
+    text-align: justify;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-item:hover,
+.package-item:hover,
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.destination-item img,
+.package-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.destination-item h3,
+.package-item h3,
+.testimonial-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.destination-item p,
+.package-item p,
+.testimonial-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.package-item span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff7e5f;
+}
+
+.section-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.explore-button {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.explore-button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+/* Contact Form Styles */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        text-align: center;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .destinations-list,
+    .packages-list,
+    .testimonials-list {
+        flex-direction: column;
+    }
+}
